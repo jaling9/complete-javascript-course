@@ -1,3 +1,4 @@
+/*
 let js = "Amazing JavaScript";
 if (js === "Amazing JavaScript")
     alert("JavaScript is fun!")
@@ -97,3 +98,47 @@ const heightJohn = 1.95;
 const BMIMark = massMark / heightMark ** 2;
 const BMIJohn = massJohn / (heightJohn * heightJohn);
 console.log("BMIMark is " + BMIMark, "BMIJohn is " + BMIJohn);
+
+
+// 模板文字 // 类似Python的f{}用法
+const firstName = "Marsh";
+const job = "DataAnalysis";
+const birthYear = 1995;
+const year = 2022;
+
+const marsh = "I'm " + firstName +",a "+(year-birthYear)+" years old "+ job +"!";
+console.log(marsh);
+
+const marshNew = `I'm ${firstName},a ${year-birthYear} years old ${job}! `;
+console.log(marshNew);
+
+console.log("String with \n\
+multipe \n\
+lines");
+
+console.log(`String with 
+multipe 
+lines`);
+*/
+
+// if statement
+const age = 17;
+const isOldEnough = age >= 18;
+const yearsLeft = 18- age;
+
+if(isOldEnough) {
+    console.log("Old enough! Sarah can start license 🚗");
+}else {
+    if (yearsLeft === 1){
+        console.log(`Sarah is too young, Wati another ${yearsLeft} years :`);
+    }
+    console.log(`Sarah is too young, Wati another ${yearsLeft} year :`);
+}
+
+const birthYear = 1998;
+if (birthYear <= 2000){
+    century = 20;
+}else{
+    century = 21;
+}
+console.log(century);
