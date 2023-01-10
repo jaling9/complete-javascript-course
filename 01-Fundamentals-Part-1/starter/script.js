@@ -119,7 +119,7 @@ lines");
 console.log(`String with 
 multipe 
 lines`);
-*/
+
 
 // if statement
 const age = 17;
@@ -142,3 +142,78 @@ if (birthYear <= 2000){
     century = 21;
 }
 console.log(century);
+
+// coding challenge
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+const markHigherBMI = BMIMark > BMIJohn;
+
+if (markHigherBMI) {
+    console.log(`Mark's BMI ${BMIMark} is higher than John's!`);
+}else {
+    console.log(`John's BMI ${BMIJohn} is higher than John's!`);
+}
+
+
+
+
+// 手动类型转换和隐式类型转换
+const inputYear = "2000";
+console.log(Number(inputYear)+18);
+console.log(inputYear+18); 
+
+console.log(Number("Marsh")); 
+
+// 隐式类型转换
+console.log("I'm " + 23 + " years old!");
+console.log("I'm " + "23" + " years old!");
+console.log("23" + "22" -3);
+console.log("23" - "22" -3);
+console.log("23"*"22");
+
+
+
+// flase值只有5个 --> 0,"",undefinded,null,NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 10;
+if(money){
+    console.log("Dont't spend it all ;");
+}else {
+    console.log("You should get a job!");
+}
+
+let height = 0;
+if(height){
+    console.log("YAY! Height is defined!");
+}else{
+    console.log("Height is undefinded!");
+}
+
+*/
+23
+// 相等运算符
+const age = 18;
+if (age === 18) console.log("You just became an adult :D (strict) "); // 严格相等
+if (age == 18) console.log("You just became an adult :D (loose)"); // 
+
+const favourite = Number(prompt("what's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23){
+    console.log("Cool! 23 is an amazing number!");
+}else if(favourite === 7){
+    console.log("7 is also a cool number!");
+}else {
+    console.log("Number is not 23 or 7");
+}
