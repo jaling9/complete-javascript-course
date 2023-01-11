@@ -199,7 +199,7 @@ if(height){
     console.log("Height is undefinded!");
 }
 
-*/
+
 23
 // 相等运算符
 const age = 18;
@@ -217,3 +217,28 @@ if (favourite === 23){
 }else {
     console.log("Number is not 23 or 7");
 }
+
+*/
+
+const isDriverLicense = true; // A 
+const hasGoodVision = false; // B 
+
+console.log(hasGoodVision && isDriverLicense)
+console.log(hasGoodVision || isDriverLicense)
+console.log(!hasGoodVision)
+
+if (isDriverLicense && hasGoodVision){
+    console.log("萨拉可以开车!");
+
+}else {
+    console.log("该去学车了!");
+}
+
+const isTired = true; // C 
+if(hasGoodVision && isDriverLicense && !isTired){
+    console.log("你应该休息了!");
+}
+
+// ! --> not
+// | --> or
+// & --> and
