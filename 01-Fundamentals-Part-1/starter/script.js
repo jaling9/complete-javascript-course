@@ -1,4 +1,4 @@
-/*
+
 let js = "Amazing JavaScript";
 if (js === "Amazing JavaScript")
     alert("JavaScript is fun!")
@@ -10,11 +10,13 @@ console.log(firstName);
 console.log(firstName);
 console.log(firstName);
 
+
 let newV = 26;
 let person = "Jonas";
 let PI = 3.1415;
 const personMarsh = "marshal";
 console.log(personMarsh);
+
 
 let myFirstJob = "researcher";
 let myCurrentJob = "dataAnalysis";
@@ -23,6 +25,7 @@ let job2 = "dataAnalysis
 true;
 let JavaScriptIsFun = true;
 console.log(JavaScriptIsFun)
+
 
 console.log(typeof true);
 console.log(typeof JavaScriptIsFun);
@@ -35,6 +38,7 @@ console.log(typeof JavaScriptIsFun)
 let year;
 console.log(year);
 console.log(typeof year);
+
 
 year = 1991;
 console.log(year);
@@ -67,6 +71,7 @@ const firstName = "John";
 const lastName = "Smith";
 console.log(firstName + " " + lastName);
 
+
 let x = 10 + 5;
 x += 10;
 x *= 10;
@@ -74,6 +79,7 @@ x++; // x = x+1
 x--; // x = x-1
 x--;
 console.log(x);
+
 
 // 比较运算符
 console.log(marshAge > saraAge);
@@ -143,6 +149,7 @@ if (birthYear <= 2000){
 }
 console.log(century);
 
+
 // coding challenge
 const massMark = 95;
 const heightMark = 1.88;
@@ -158,7 +165,6 @@ if (markHigherBMI) {
 }else {
     console.log(`John's BMI ${BMIJohn} is higher than John's!`);
 }
-
 
 
 
@@ -218,7 +224,7 @@ if (favourite === 23){
     console.log("Number is not 23 or 7");
 }
 
-*/
+
 
 const isDriverLicense = true; // A 
 const hasGoodVision = false; // B 
@@ -242,3 +248,37 @@ if(hasGoodVision && isDriverLicense && !isTired){
 // ! --> not
 // | --> or
 // & --> and
+
+
+// Switch case 语句 
+const day = "Monday";
+
+switch(day){
+    case "Monday": // if day === "Monday" then
+        console.log("Plan course structure");
+        console.log("GO to cooding meetups");
+        break;
+    case "Tuesday": // if day === "Tuesday" then
+        console.log("Prepare theory video");
+        break;
+    case "Wednesday": // if day === "Wednesday" then
+    case "Thursday": // if day === "Thursday" then
+        console.log("Write code example");
+        break;
+    case "Friday":
+        console.log("Record videos");
+        break;
+    case "Saturday": // if day === "Saturday" then
+    case "Sunday": // if day === "Sunday" then
+        console.log("Enjoy the weekend :D");
+        break;
+    default:
+        console.log("Not a valid day!");
+}
+
+
+// 三元运算符
+// if / else 不能用在字符串模板里,但是三元运算符可以!!!!!
+const age = 13;
+age >= 18 ? console.log("我要喝酒"):
+console.log("我不能喝酒");
